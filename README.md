@@ -3,3 +3,4 @@
 
 
 cicid-test
+- gradle build test
