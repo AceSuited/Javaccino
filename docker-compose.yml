@@ -1,0 +1,19 @@
+version: '3'
+services:
+  api:
+    image: javaccino:latest
+    container_name: javaccino
+    restart: always
+    environment:
+      - EMOTIE_SECRET_KEY=emotie_javaccino_secret_key
+      - EXPIRE_LENGTH_IN_MILLISECONDS=1209600000
+      - EMAIL_ADDRESS=poolc.official@gmail.com
+      - EMAIL_PASSWORD=czurnkdprpkrsljk
+      - EMOTIE_DOMAIN=http://54.180.165.50:8080/
+      - DB_HOST=db
+      - DB_NAME=emotie
+      - DB_USER_NAME=emotie
+      - DB_PASSWORD=emotie123!
+      - TZ=Asia/Seoul
+    ports:
+      - "8080:8080"
